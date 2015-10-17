@@ -4,16 +4,16 @@ var jsonData = {};
 var currentIndex = 0;
 var totalsize;
 var tempFlag = 0;
+var buttonShowText = 'Show Next';
 
 document.addEventListener("DOMContentLoaded", function(event) {
     btn_loadData = document.getElementById("loadBtn");
-    btn_showNext = document.getElementById("showBtn")
+    btn_showNext = document.getElementById("showBtn");
     btn_loadData.addEventListener('click', loadData);
-    btn_showNext.addEventListener('click', next);
-
 });
 
 function loadData() {
+    btn_showNext.addEventListener('click', next);
     console.log("loadData()");
     var req = new XMLHttpRequest();
     req.open('GET', 'https://raw.githubusercontent.com/mang0055/MAD9014/master/MidTerm/users.json', false);
@@ -24,7 +24,7 @@ function loadData() {
                 parseJson(req.responseText);
             }
         }
-    }
+    };
     if (btn_loadData.className === 'btn enabled') {
         req.send(null);
     }
@@ -40,9 +40,9 @@ function parseJson(obj) {
 }
 
 function next() {
-    if (btn_showNext.innerHTML != 'Show Next') {
+    if (btn_showNext.innerHTML != buttonShowText) {
         console.log("written show next");
-        btn_showNext.innerHTML = 'Show Next';
+        btn_showNext.innerHTML = buttonShowText;
     }
 
     if (currentIndex < totalsize) {
@@ -50,7 +50,7 @@ function next() {
     }
     if (currentIndex === (totalsize - 1)) {
         btn_showNext.removeEventListener('click', next);
-        alert('Its End! Refresh the page to see it again.');
+        //alert('Its End! Refresh the page to see it again.');
     }
     currentIndex++;
     console.log("next()");
@@ -59,7 +59,7 @@ function next() {
 function setFeedByIndex(index) {
     var outputDiv = document.getElementById("output1");
     outputDiv.innerHTML = '<img src="' + jsonData[index]['image'] + '"><h2>' + toTitleCase(jsonData[index]['firstName']) + ' ' + toTitleCase(jsonData[index]['lastName']) + '</h2><a href="mailto:' + jsonData[index]['email'] + '">' + jsonData[index]['email'] + '</a></div>';
-    if (currentIndex != 0) {
+    if (currentIndex !== 0) {
         var rightDiv = document.getElementById("output2");
         var data = rightDiv.innerHTML;
         console.log(tempFlag);
