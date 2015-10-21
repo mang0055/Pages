@@ -1,0 +1,234 @@
+   /* -- Defaults -- */
+   
+   @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+   * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+   }
+   body {
+       background: url('http://lorempixel.com/960/480/cats/5');
+       background-size: 100% 15rem;
+       background-repeat: no-repeat;
+   }
+   html {
+       font-size: 16px;
+       line-height: 1.75;
+       font-family: 'Poiret One', Helvetica, Calibri, sans-serif;
+   }
+   /* -- Layout -- */
+   
+   .wrapper {
+       width: 90%;
+       margin: 0 auto;
+       color: #555;
+   }
+   .clearfix:after {
+       clear: both;
+       display: block;
+       content: '.';
+       visibility: hidden;
+       height: 0;
+       line-height: 0;
+   }
+   /* -- Navigation -- */
+   
+   .mainnav {
+       float: left;
+       width: 14%;
+       margin-right: 2%;
+       padding-bottom: 20rem;
+       background-position: 0 11rem;
+       background: url(http://lorempixel.com/600/400/cats/3) no-repeat scroll 0 0 / cover;
+   }
+   .mainnav ul {
+       list-style: none;
+   }
+   .mainnav li {
+       /* float:left;
+  width: 33.33%;*/
+   }
+   .mainnav a,
+   .mainnav a:visited {
+       text-decoration: none;
+       display: block;
+       font-size: 1rem;
+       background-color: #333;
+       color: #EEE;
+       text-align: left;
+       padding: 0.5rem 0;
+       text-indent: 15px;
+   }
+   .mainnav a:hover,
+   .mainnav a:active {
+       background-color: #EEE;
+       color: #333;
+   }
+   /* -- Content -- */
+   
+   .masthead h1 {
+       font-size: 3rem;
+       line-height: 15rem;
+       color: #7f1500;
+       padding: 0 0;
+   }
+   .content {
+       padding: 0;
+       float: left;
+       width: 58%
+   }
+   .main h2 {
+       padding: 0 2rem;
+       font-size: 2.5rem;
+       line-height: 3;
+       color: #444;
+   }
+   .main h3 {
+       padding: 0 2rem;
+       font-size: 1.6rem;
+       line-height: 3;
+   }
+   .main p {
+       padding: 0 2rem 1rem;
+       font-size: 1rem;
+   }
+   p {
+       text-align: justify;
+   }
+   p img {
+       width: 100%;
+   }
+   .footer p {
+       padding: 1rem 2rem;
+       font-size: 0.8rem;
+       background-color: #333;
+       color: #999;
+   }
+   .side {
+       float: left;
+       width: 26%;
+       padding-left: 1.2rem;
+       border-left: 1px solid #eeeeee;
+   }
+   .primary section {
+       float: left;
+       width: 48.4%;
+       padding-right: 3%;
+       border-right: 1px solid #eeeeee;
+   }
+   .primary section:first-child {} .primary section:last-child {
+       margin-left: 3%;
+       border: 0;
+   }
+   @media only screen and (max-width: 40em) {
+       body {
+           background: url('http://lorempixel.com/960/400/cats/');
+           background-size: 100% 3.5rem;
+           background-repeat: no-repeat;
+       }
+       .mainnav {
+           width: 100%;
+           margin-bottom: 1rem;
+           background: none;
+           padding-bottom: 0;
+       }
+       .mainnav li {
+           width: 100%;
+       }
+       .masthead h1 {
+           line-height: 1.5rem;
+           font-size: 1.5rem;
+           padding: 1rem 0;
+           background: url('http://lorempixel.com/960/400/cats/') no-repeat: 50% 50%;
+       }
+       .primary,
+       .secondary,
+       .tertiary {
+           float: left;
+           width: 100%;
+       }
+       .primary section {
+           width: 100%;
+           margin: 0;
+           border: 0;
+       }
+       .primary section:last-child {
+           margin-left: 0%;
+           border: 0;
+       }
+       .side {
+           width: 100%;
+           border: 0px;
+           padding: 0;
+       }
+       .masthead h2 {
+           font-size: 1rem;
+           background: red;
+       }
+       .content {
+           width: 100%;
+       }
+   }
+   @media all and (max-width: 60em) and (min-width: 35em) {
+       body {
+           background: url('http://lorempixel.com/960/400/cats/');
+           background-size: 100% 8rem;
+           background-repeat: no-repeat;
+       }
+       .mainnav {
+           width: 100%;
+           margin-bottom: 2rem;
+           background: none;
+           padding-bottom: 0;
+           position: absolute;
+           left: 0;
+       }
+       .mainnav li {
+           float: left;
+           width: 25%;
+       }
+       .mainnav a,
+       .mainnav a:visited {
+           text-align: center;
+           text-indent: 0;
+       }
+       .masthead h1 {
+           line-height: 8rem;
+           font-size: 3rem;
+       }
+       .content {
+           width: 66%;
+           padding-top: 4rem;
+       }
+       .primary {
+           width: 100%;
+           float: none;
+       }
+       .primary section {
+           width: 95%;
+           margin: 0;
+           border: 0;
+       }
+       .primary section:last-child {
+           margin-left: 0%;
+           border: 0;
+       }
+       .side {
+           width: 33%;
+           padding: 0px;
+           border: 0px;
+           padding-top: 4rem;
+       }
+       .secondary,
+       .tertiary {
+           float: left;
+           width: 50%;
+       }
+   }
+   @media all and (max-width: 40em) and (min-width: 35em) {
+       body {
+           background: url('http://lorempixel.com/960/480/cats/5');
+           background-size: 100% 10rem;
+           background-repeat: no-repeat;
+       }
+   }
