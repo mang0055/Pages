@@ -30,7 +30,7 @@ tbody tr:nth-child(even){
 	background:hsla(0,0%,100%,0.1);
 }
 tbody tr:nth-child(odd){
-    background:hsla(0, 1%, 55%,0.1);
+    background:hsla(0, 1%, 55%,0.4);
 }
 body:not(.nohover) 
 tbody tr:hover {
