@@ -18,6 +18,8 @@ s2.addEventListener("load",loaded);
 s1.setAttribute("type","text/javascript");
 s1.setAttribute("src","https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js");
 
+var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']; 
+//http://stackoverflow.com/questions/13566552/easiest-way-to-convert-month-name-to-month-number-in-js-jan-01
 
 function loaded(){
     numLoaded++;
@@ -41,11 +43,12 @@ function getData(){
     });
     
 }
+
 function todayWeather(current) {
     //Show current weather
     var today = new Date();
     var container = $(".weather-forecast");
-    $("<p>").text("Current Conditions for today, " + today.getDate() + "/" + (parseInt(today.getMonth()) + 1)).appendTo(container);
+    $("<p>").text("Current Conditions for today, " + today.getDate() + "-" + monthNames[(parseInt(today.getMonth()))]).appendTo(container);
     $("<i>").addClass("wi").addClass("wi-forecast-io-" + current.icon).addClass("current").appendTo(container);
     $("<p>").text("Temperature " + current.temperature + " C").appendTo(container);
     $("<p>").text(current.summary).appendTo(container)
