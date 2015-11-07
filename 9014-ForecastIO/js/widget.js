@@ -19,12 +19,8 @@ h.appendChild(s1);
 h.appendChild(s2);
 var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 //http://stackoverflow.com/questions/13566552/easiest-way-to-convert-month-name-to-month-number-in-js-jan-01
-
-document.addEventListener("DOMContentLoaded", function (event) {
-    s1.addEventListener("load", loaded);
-    s2.addEventListener("load", loaded);
-
-});
+s1.addEventListener("load", loaded);
+s2.addEventListener("load", loaded);
 
 function loaded() {
     numLoaded++;
