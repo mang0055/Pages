@@ -1,0 +1,341 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+/***************************************
+        DEFAULTS
+***************************************/
+html{
+    color:#000;
+    background:#fff;
+    font-size: 16px;
+    font-family: Georgia, serif;
+}
+li{
+    float:left;
+    list-style: none;
+}
+p{
+    line-height:1.6;
+}
+
+/***************************************
+        BACKGROUND & ICONS
+***************************************/
+[class^=bg]{
+    width:100%;
+    clear:both;
+}
+[class^=bg] > section{
+    width: 960px;
+    margin:0 auto;
+}
+.bg-white{
+    background-color: #fff;
+    color:#000;
+}
+.bg-gold{
+    color:#000;
+    background-color: #fcd307;
+}
+.bg-black{
+    background-color:#000;
+    color: #fff;
+}
+.bg-people{
+    background: #222 url(../img/bg/creative-office.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+/***************************************
+        LAYOUT
+***************************************/
+.masthead h1{
+    float:left;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.414rem;
+    margin:1rem 2rem;
+}
+.masthead h1 span{
+    font-style: normal;
+    font-weight: 600;
+}
+.masthead .subnav{
+    float:right;
+    margin:1.3rem 2rem 1rem 2rem;
+}
+.focal{
+    min-height:500px;
+}
+.focal h2{
+    margin:1rem 2rem;
+    padding-top:3rem;
+    width:30%;
+    font-size:2.897rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.focal h2 .iconic{
+    color: #fcd307;
+}
+.focal h2 .iconic *{
+    fill: #fcd307;
+    stroke: #fcd307;
+}
+.focal h3{
+    margin:1rem 2rem;
+    font-size:1.414rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.focal .btn{
+    margin:1rem 1rem;
+    display: inline-block;
+    border:2px solid #fff;
+    color:#fff;
+    padding: 0.5rem 1.5rem;
+    transition:all 0.5s ease;
+}
+.focal h3+.btn{
+    margin-left:2rem;
+}
+.focal .btn:hover{
+    color:#fcd307;
+    border: 2px solid #fcd307;
+}
+.mainnav{
+    min-height: 280px;
+}
+/***************************************
+        NAVIGATION
+***************************************/
+.subnav li{
+    
+}
+.subnav li a,
+.subnav li a:link,
+.subnav li a:visited{
+    color:#000;
+    padding:0.5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:0.707rem;
+    font-family: helvetica, arial, sans-serif;
+}
+.subnav li a:active,
+.subnav li a:hover{
+    color:#fcd307;
+}
+.subnav li.current a{
+    color:#fcd307;
+}
+.subnav .iconic:hover *{
+    fill:#fcd307;
+    stroke:#fcd307;
+}
+.mainnav ul{
+    width: 80%;
+    margin:0 auto;
+    padding-top:75px;
+}
+.mainnav li{
+    width:25%;
+    min-height:8rem;
+}
+.mainnav li a{
+    display:block;
+    text-align: center;
+    font-family: helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #000;
+}
+.mainnav li a span{
+    display: block;
+    margin:0.5rem auto 1.5rem auto;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.mainnav li a span .iconic{
+    margin-top:1.15rem;
+}
+
+/***************************************
+        CONTENT
+***************************************/
+.about{
+    
+}
+.about h2{
+    margin: 2rem 2rem 0.5rem;
+    font-size: 2.897rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 2rem;
+}
+.about h2 .iconic *{
+    /* if we need to change the + color */
+}
+.about h2 + p{
+    margin: 0rem 2rem 1rem 5rem;
+    font-size: 1rem;
+}
+.about p.col-2{
+    float:left;
+    width:50%;
+    padding:1rem 2rem;
+}
+.about li{
+    width:25%;
+    padding:1rem;
+    text-align: center;
+}
+.about li .person{
+    max-width: 100%;
+}
+.person h4{
+    font-size:1rem;
+    color: #4d4d4d;
+    font-weight: 100;
+}
+.person h5{
+    font-size:1rem;
+    color: #858585;
+    font-weight: 100;
+}
+.contact h2{
+    margin:2rem 2rem 0.5rem;
+    font-size: 2.897rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top:2rem;
+}
+.contact h2 .iconic *{
+    fill: #fff;
+    stroke: #fff;
+}
+.contact h2 + p{
+    margin: 0rem 2rem 1rem 5rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+.contact p{
+    margin:1rem 2rem;
+}
+.contact p .iconic *{
+    fill:#fff;
+    stroke: #fff;
+}
+.contact .map{
+    max-width: 100%;
+    width: 360px;
+    height: 340px;
+    padding: 1rem;
+}
+.contact .col-40{
+    width:40%;
+    float:left;
+    margin:2rem 0;
+    padding-left:2rem;
+    padding-bottom:2rem;
+}
+.col-40 .iconic{
+    margin-right:1rem;
+}
+.contact .col-60{
+    width:50%;
+    float:right;
+    margin:2rem 0rem;
+    padding: 0 2rem 2rem 0;
+}
+.contact .col-60 p{
+    margin:0;
+    padding:2rem 0;
+}
+.contact hr{
+    width:100%;
+    clear:both;
+    border-color: #fff;
+    color:#fff;
+    background-color:#fff;
+    margin: 2rem 0 0;
+    height: 1px;
+}
+
+.footer{
+    padding:2rem 0;
+}
+.footer .col-40{
+    width: 44%;
+    float: left;
+    padding: 1rem 1rem 0.5rem 2rem;
+    font-size: 0.707rem;
+    font-weight: 100;
+}
+.footer .col-60{
+    width: 56%;
+    float: right;
+    padding: 1rem 2rem 0.5rem 1rem;
+    font-size: 0.707rem;
+    font-weight: 100;
+    text-align: right;
+}
+.footer .col-60 .iconic{
+    margin:0 0 0 1rem;
+}
+/***************************************
+        FORMS
+***************************************/
+form{
+    width:100%;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+input{
+    width:49.5%;
+    float:left;
+    font-size:1rem;
+    line-height:1.6rem;
+    margin-bottom:0.1rem;
+    padding: 0.2rem 1rem;
+}
+input[type=submit]{
+    float:right;
+    background-color:#fcd703;
+    color:#000;
+    padding: 0.2rem 2rem;
+    width:auto;
+    margin: 0.2rem 0 2rem 0;
+    font-style: italic;
+}
+textarea{
+    width:49.5%;
+    float:right;
+    font-size:1rem;
+    line-height:1.6rem;
+    padding:0.2rem 1rem;
+    height: 6.2rem; 
+    /*(2.0rem + 0.1rem + 2.0rem + 0.1rem + 2.0rem) */
+    color: #858585;
+}
+
+
+/***************************************
+        OTHER
+***************************************/
+.clearfix:after{
+    content:' ';
+    display:block;
+    clear: both;
+    
+}
