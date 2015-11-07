@@ -24,8 +24,9 @@ s2.addEventListener("load", loaded);
 
 function loaded() {
     numLoaded++;
-    if (numLoaded = totalRequired) {
+    if (numLoaded === totalRequired) {
         getData();
+          console.log('getData: ' + numLoaded);
     }
     console.log('ScriptLoaded: ' + numLoaded);
 }
@@ -36,11 +37,9 @@ function getData() {
         method: 'GET',
         dataType: 'jsonp'
     }).success(function (data) {
-        console.log(data);
         todayWeather(data.currently);
         hourlyWeather(data.hourly);
-        console.log(data)
-        setTimeout(playAnim(), 5000);
+        setTimeout(playAnim(), 500);
     }).error(function (jqXHR, textStatus, errorThrown) {
         console.log(errorThrown);
     });
