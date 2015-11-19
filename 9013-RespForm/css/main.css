@@ -75,7 +75,7 @@ p {
     float: left;
     text-align: left;
     margin-right: 15px;
-    width: 100px;
+    width: 33%;
     padding-top: 5px;
     font-size: 1.4em;
 }
@@ -89,12 +89,6 @@ p {
         display: none;
     }
     #content input.text {
-        width: 250px;
-    }
-}
-
-@media (Max-width:808px) {
-    .lastLabel {
-        display: none;
+        width: 350px;
     }
 }
