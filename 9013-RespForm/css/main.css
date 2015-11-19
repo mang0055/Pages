@@ -1,0 +1,100 @@
+@charset 'utf-8';
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Lato);
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+#header {
+    background: #D3D3D3;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #708090;
+    font: 2em "Roboto Slab",serif;
+	padding:1em 0.75em 0.5em;
+}
+
+.clrboth {
+    clear: both;
+}
+
+.col40 {
+    width: 50%;
+    float: left;
+}
+
+#formMain {
+    padding: 10px;
+}
+
+body {
+    font-family: Lato,sans-serif;
+	font-weight: 400;
+    background: #DCDCDC;
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    float: left;
+}
+
+#content input.text {
+    padding: 5px;
+    min-width: 200px;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.4em;
+    margin: 0px 0px 10px 0px;
+    border: 2px solid #ccc;
+    width: 50%;
+}
+
+#content input#submit {
+    padding: 5px;
+    width: 80px;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.4em;
+    margin: 0px 0px 10px 0px;
+    border: 2px solid #ccc;
+}
+
+#content input:focus {
+    border: 2px solid #900;
+}
+
+#content input.submit {
+    width: 100px;
+}
+
+#content label {
+    float: left;
+    text-align: left;
+    margin-right: 15px;
+    width: 100px;
+    padding-top: 5px;
+    font-size: 1.4em;
+}
+
+@media (Max-width:580px) {
+    .col40 {
+        width: 100%;
+        float: left;
+    }
+    #content label {
+        display: none;
+    }
+    #content input.text {
+        width: 250px;
+    }
+}
+
+@media (Max-width:808px) {
+    .lastLabel {
+        display: none;
+    }
+}
