@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" class="ui-mobile">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>panel demo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="css/monument.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- Home Page  -->
+    <div data-role="page" id="home">
+        <div data-role="header" id="navbar">
+            <a href="#defaultpanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars  ui-btn-icon-notext" data-theme="a" data-inline="true">Menu</a>
+            <h1>7 Wonders</h1><a href="javascript:void(0)" id="btn_change" class="ui-btn ui-shadow ui-corner-all ui-icon-action ui-btn-icon-notext">Change Theme</a></div>
+        <div role="content" class="ui-content">
+            <img src="images/monument_all.jpg" />
+            <p>Everybody knows the most famous landmarks in the world, you can name it, or? Anyhow, on this tutorial pages you will find some, if not all, most famous landmarks and monuments around the world, as well as some, not everybody knows. Each of these cultural icons is a symbol with various meanings, it may represent an epoch, an area, a belief, a culture, a country or a city. </p>
+            <a href="#won1" id="startShow"data-role="button" data-inline="true" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-left">Start Visiting Wonders</a>
+        </div>
+
+        <!-- Sliding Panel all the navigation are in panel  -->
+        <div data-role="panel" id="defaultpanel">
+
+            <div class="panel-content">
+                <h3>Default panel options</h3>
+                <p>This panel has all the default options: positioned on the left with the reveal display mode. The panel markup is <em>before</em> the header, content and footer in the source order.</p>
+                <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+                <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Close panel</a>
+            </div>
+            <!-- /content wrapper for padding -->
+        </div>
+        <!-- panel ends-->
+        <!-- /Footer -->
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" role="contentinfo" class="ui-footer ui-bar-b ui-footer-fixed slideup">
+            <div data-role="navbar" class="ui-navbar" role="navigation">
+                <ul class="ui-grid-a">
+                    <li class="ui-block-a"><a href="#home" class="ui-btn ui-state-disabled ui-icon-home ui-btn-icon-top" data-icon="home" data-iconpos="top">Home</a></li>
+                    <li class="ui-block-b"><a href="#aboutus" class="ui-btn ui-icon-info ui-btn-icon-top" data-icon="info" data-iconpos="top">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Footer Ends-->
+    </div>
+    <!-- Monument 1 :START -->
+    <div data-role="page" id="won1" data-dialog="true" data-close-btn="none" data-url="won1">
+        <!--home-->
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Wonder 1 of 7</h1>
+        </div>
+        <div data-role="content">
+            <!--content-->
+            <h1>The Pyramid at Chichen Itza. Mexico </h1>
+            <img class="monuments" src="images/won1.jpg">
+            <p>Chichen Itza once served as the political and economic center of Mayan civilization. The city housed masterpieces like the Temple of Chac Mool, the Hall of the Thousand Pillars, the Playing Field of the Prisoners and the pyramid of Kukulkan, which was the last Mayan temple.
+            </p>
+            <a href="#" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-state-disabled backP">Back</a>
+            <a href="#won2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">Next</a>
+        </div>
+    </div>
+    <!-- Monument 1 : END-->
+
+    <!-- Monument 2 :START -->
+    <div data-role="page" id="won2" data-dialog="true" data-close-btn="none" data-url="won2">
+        <!--home-->
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Wonder 2 of 7</h1>
+        </div>
+        <div data-role="content">
+            <!--content-->
+            <h1>Christ Redeemer. Brazil</h1>
+            <img class="monuments" src="images/won2.jpg">
+            <p>The 124-foot statue of Jesus stands atop the Corcovado Mountain overlooking Rio de Janeiro. Built in 1931, it took five years to construct and symbolizes the warmth and welcoming spirit of the Brazilian people.
+            </p>
+            <a href="#won1" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">Back</a>
+            <a href="#won3" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">Next</a>
+        </div>
+    </div>
+    <!-- Monument 2 : END-->
+    <!-- Monument 3 :START -->
+    <div data-role="page" id="won3" data-dialog="true" data-close-btn="none" data-url="won3">
+        <!--home-->
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Wonder 3 of 7</h1>
+        </div>
+        <div data-role="content">
+            <!--content-->
+            <h1>Colosseum. Rome</h1>
+            <img class="monuments" src="images/won3.jpg">
+            <p>Almost every sports stadium today is created based on the design of the Colosseum, built between 70-82 A.D. Located in the center of Rome, the amphitheater could seat up to 50,000 spectators who watched public spectacles like the infamous gladiator fights.
+            </p>
+            <a href="#won2" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">Back</a>
+            <a href="#won4" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">Next</a>
+        </div>
+    </div>
+    <!-- Monument 3 : END-->
+    <!-- Monument 4 :START -->
+    <div data-role="page" id="won4" data-dialog="true" data-close-btn="none" data-url="won4">
+        <!--home-->
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Wonder 4 of 7</h1>
+        </div>
+        <div data-role="content">
+            <!--content-->
+            <h1>Great Wall, China</h1>
+            <img class="monuments" src="images/won4.jpg">
+            <p>The largest man—made monument ever built at about 4,000 miles in length, the wall was originally built to help create a united defense system and prevent invading Mongol tribes out of China. Construction began around the 8th century B.C. and efforts to revive it took place from 1368 — 1644 A.D.
+            </p>
+            <a href="#won3" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">Back</a>
+            <a href="#won5" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">Next</a>
+        </div>
+    </div>
+    <!-- Monument 4 : END-->
+    <!-- Monument 5 :START -->
+    <div data-role="page" id="won5" data-dialog="true" data-close-btn="none" data-url="won5">
+        <!--home-->
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Wonder 5 of 7</h1>
+        </div>
+        <div data-role="content">
+            <!--content-->
+            <h1>Machu Picchu, Peru</h1>
+            <img class="monuments" src="images/won5.jpg">
+            <p>Machu Picchu, which means "old settlement," is located halfway up the Andes Plateau—in the Amazon jungle and above the Urubamba River. Originally a 15th century Incan settlement, the magnificent city was "lost" for three centuries, then rediscovered in 1911.
+            </p>
+            <a href="#won4" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">Back</a>
+            <a href="#won6" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">Next</a>
+        </div>
+    </div>
+    <!-- Monument 5 : END-->
+    <!-- Monument 6 :START -->
+    <div data-role="page" id="won6" data-dialog="true" data-close-btn="none" data-url="won6">
+        <!--home-->
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Wonder 6 of 7</h1>
+        </div>
+        <div data-role="content">
+            <!--content-->
+            <h1>Petra, Jordan</h1>
+            <img class="monuments" src="images/won6.jpg">
+            <p>Petra, located on the edge of the Arabian desert, was home to Aretas IV, king of the Nabataeans, who were masters of water technology. The facade of a 138 ft.—high Hellenistic temple on the El-Deir Monastery—an example of traditional Middle Eastern culture—sits within the Palace Tombs of Petra.
+            </p>
+            <a href="#won5" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">Back</a>
+            <a href="#won7" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">Next</a>
+        </div>
+    </div>
+    <!-- Monument 6 : END-->
+    <!-- Monument 7 :START -->
+    <div data-role="page" id="won7" data-dialog="true" data-close-btn="none" data-url="won7">
+        <!--home-->
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Wonder 7 of 7</h1>
+        </div>
+        <div data-role="content">
+            <!--content-->
+            <h1>Taj Mahal, India</h1>
+            <img class="monuments" src="images/won7.jpg">
+            <p>The white marble mausoleum is believed by many to be the best representation of Muslim art in India. The Taj Mahal was built around 1630, an order from Muslim emperor Shah Jahan, to honor the memory of his beloved late wife.
+            </p>
+            <a href="#won6" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">Back</a>
+            <a href="#" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right ui-state-disabled nextP">Next</a>
+        </div>
+    </div>
+    <!-- Monument 7 : END-->
+    <!-- About-Us Page : START-->
+     <div data-role="page" id="aboutus" data-url="aboutus">
+     <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>Android Artist</h1>
+        </div>
+         <div data-role="content">
+            <!--content-->
+            <h1>Raviraj Mangukiya</h1>
+            <img class="monuments" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/4/000/174/00a/314f1e1.jpg">
+<p>My name is Raviraj and I am from Ahmedabad, the city of Gujarat state, INDIA.</p>
+<p>After completion of &lsquo;Bachelor of Computer Engineering&rsquo;. I began my career in the world of IT as an Android Developer and gained 4 years of experience in Android Mobile Application Design &amp; Development.</p>
+<p>I have worked with number of different applications, in fact writing new code is my passion. I am passionate about mobile apps and game development to continuously discover, evaluate, and implement new technologies. You can always find me with my computer to working on cool stuff related to Android in any corner of the college.</p>
+<p>Everything I like which is related to Mobile Technologies. I am good at Hackathon</p>
+Adventure is very important to me and I love to roam different natural places. From my personal interest, Guitar cames first. It makes my life in college days. But from past 4 years its untouched. I am crazy about motorcycles, nothing makes me more happier than hitting the road with my motorcycle. Unfortunately, its not possible in Canada as I don&rsquo;t have my motorcycle here. For sure someday. :-) Thank you for reading. Feel free to&nbsp;connect on&nbsp;my <a id="" class="" title="" href="https://ca.linkedin.com/in/iaamraviraj" target="_blank">LinkedIn</a>&nbsp;and&nbsp;<a id="" class="" title="" href="https://www.facebook.com/iaamraviraj" target="_blank">Facebook</a>.</p>
+        </div>
+        <!-- /Footer -->
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" role="contentinfo" class="ui-footer ui-bar-b ui-footer-fixed slideup">
+            <div data-role="navbar" class="ui-navbar" role="navigation">
+                <ul class="ui-grid-a">
+                    <li class="ui-block-a"><a href="#home" class="ui-btn  ui-icon-home ui-btn-icon-top" data-icon="home" data-iconpos="top">Home</a></li>
+                    <li class="ui-block-b"><a href="#aboutus" class="ui-btn ui-icon-info ui-btn-icon-top ui-state-disabled" data-icon="info" data-iconpos="top">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Footer Ends-->
+    </div>
+    <!-- About-Us Page : END-->
+</body>
+
+</html>
