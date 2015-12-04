@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SVG-Raviraj</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <object data="logo.svg" type="image/svg+xml" id="svg" width="50%" height="50%"></object>
+    <script>
+        var a = document.getElementById("svg");
+
+        a.addEventListener("load", function () {
+            var svgDoc = a.contentDocument;
+            var delta = svgDoc.getElementById("logo");
+
+            delta.addEventListener("mouseover", function () {
+                svgDoc.getElementById("text1").setAttribute('fill', 'red');
+            }, false);
+            delta.addEventListener("mouseout", function () {
+                svgDoc.getElementById("text1").setAttribute('fill', 'black');
+            }, false);
+
+        }, false);
+    </script>
+</body>
+
+</html>
