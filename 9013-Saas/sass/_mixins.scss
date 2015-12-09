@@ -1,0 +1,18 @@
+@mixin color_combo($colorcode) {
+    background-color: 1px solid $colorcode;
+    color: $colorcode;
+}
+
+@mixin header_para_style($size, $padding...) {
+    font-size: $size;
+    padding: $padding;
+}
+@mixin equalSpaced( $num_of_cols, $spacing, $width:100%  ){
+  
+  width: ( $width - ( $spacing * ($num_of_cols - 1) ) ) / $num_of_cols;
+  margin-left: $spacing;
+  float: left;
+  &:first-child{
+    margin-left: 0;
+  }
+ }
