@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SVG-Raviraj-Final</title>
+    <style type="text/css">
+        .left {
+            float: left;
+            margin: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <object data="mic_icon.svg" type="image/svg+xml" id="svg_mic" width="50%" height="50%"></object>
+            <p><strong>First state:</strong> Disconnected condition</p>
+            <p><strong>Second:</strong> While you hover over the icon it shows you as device connected. Hoverout <br/>nosound but device still plugged
+            </p>
+            <p><strong>Third:</strong> click on icon can mute/unmute the recording.</p>
+        </div>
+        <div class="left">
+            <object data="headphone.svg" type="image/svg+xml" id="svg_headphone" width="50%" height="50%"></object>
+            <p><strong>First state:</strong> Disconnected condition</p>
+            <p><strong>Second:</strong> While you hover over the icon it shows you as device connected. Hoverout <br/>nosound but device still plugged
+            </p>
+            <p><strong>Third:</strong> click on icon can mute/unmute the recording.</p>
+        </div>
+
+    </div>
+
+    <script>
+        var flag = 0;
+        var svg_mic = document.getElementById("svg_mic");
+        svg_mic.addEventListener("load", function () {
+            var svgDoc = svg_mic.contentDocument;
+            var delta = svgDoc.getElementById("mic-group");
+            svgDoc.getElementById("mic-off").setAttribute('fill', '#A3A5A8');
+            delta.addEventListener("mouseover", function () {
+                //console.log('over');
+                svgDoc.getElementById("mic-off").setAttribute('fill', '#000000');
+                svgDoc.getElementById("mic-on").setAttribute('class', 'show');
+
+            }, false);
+            delta.addEventListener("mouseout", function () {
+                //console.log('out');
+                svgDoc.getElementById("mic-off").setAttribute('class', 'show');
+                svgDoc.getElementById("mic-on").setAttribute('class', 'hide');
+                if (flag % 2 != 0) {
+                    svgDoc.getElementById("mic-off").setAttribute('class', 'hide');
+                    svgDoc.getElementById("mic-on").setAttribute('class', 'show');
+                }
+            }, false);
+            delta.addEventListener("click", function () {
+                if (flag % 2 == 0) {
+                    svgDoc.getElementById("mic-mute").setAttribute("class", "show");
+                } else {
+                    svgDoc.getElementById("mic-mute").setAttribute("class", "hide");
+                }
+                flag++;
+            }, false);
+        }, false);
+            var svg_headphone = document.getElementById("svg_headphone");
+            var flag1=0;
+            svg_headphone.addEventListener("load", function () {
+                var svgDocHeadPhone = svg_headphone.contentDocument;
+                var alpha = svgDocHeadPhone.getElementById("headphone-group");
+                svgDocHeadPhone.getElementById("headphone-off").setAttribute('fill', '#A3A5A8');
+                 alpha.addEventListener("mouseover", function () {     
+                        svgDocHeadPhone.getElementById("headphone-on").setAttribute('fill', '#000000');
+                        svgDocHeadPhone.getElementById("headphone-on").setAttribute('class', 'show');
+                        //console.log("over");
+                 },false);
+                alpha.addEventListener("mouseout",function(){
+                    //console.log("out");
+                    svgDocHeadPhone.getElementById("headphone-off").setAttribute('class', 'show');
+                    svgDocHeadPhone.getElementById("headphone-off").setAttribute('fill', '#000000');
+                    svgDocHeadPhone.getElementById("headphone-on").setAttribute('class', 'hide');
+                    if (flag1 % 2 != 0) {
+                        svgDocHeadPhone.getElementById("headphone-off").setAttribute('class', 'hide');
+                        svgDocHeadPhone.getElementById("headphone-on").setAttribute('class', 'show');
+                    }
+                },false);
+                alpha.addEventListener("click",function(){
+                if (flag1 % 2 == 0) {
+                    svgDocHeadPhone.getElementById("headphone-mute_1_").setAttribute("class", "show");
+                } else {
+                    svgDocHeadPhone.getElementById("headphone-mute_1_").setAttribute("class", "hide");
+                }
+                flag1++;
+                },false);
+            },false);
+            
+    </script>
+
+</body>
+</html>
