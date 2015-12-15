@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div data-role="header">
+
+    </div>
+    <div data-role="page">
+        <div data-role="header" id="navbar">
+            <a href="#defaultpanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars  ui-btn-icon-notext" data-theme="a" data-inline="true">Menu</a>
+            <h1>Shoping 2 Survive</h1><a href="#" id="btn_change" class="ui-btn ui-shadow ui-corner-all ui-icon-info ui-btn-icon-notext" onclick="window.open('http://ca.linkedin.com/in/iaamraviraj', '_system');">Profile</a></div>
+        <!-- Sliding Panel all the navigation are in panel  -->
+        <div data-role="panel" id="defaultpanel">
+
+            <div class="panel-content">
+                <h3>This assignment is for Final Project Shopping app.</h3>
+                <p>List of Features</p>
+                <ul>
+                    <li>App use localstorage,Two function 1) mark as done, and 2) remove implemented</li>
+                    <li>Used local storage to store all status </li>
+                    <li>There is a footer with a form to input text and a button to add the item.</li>
+                    <li>Add an item it should go into localstorage and appear in the list.</li>
+                    <li>After you add an item, the text input field in the footer should be cleared out.</li>
+                    <li>Challenge Features are also implemented</li>
+                </ul>
+                <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Close panel</a>
+            </div>
+            <!-- /content wrapper for padding -->
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" id="grocery-mang0055" data-split-icon="delete" data-filter="true" data-inset="true" data-theme="d" />
+        </div>
+        <!-- Footer -->
+        <div data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-a ui-footer-fixed slideup">
+            <div class="ui-grid-a">
+                <div style="width:85%" class="ui-block-a">
+                    <input id="task" type="text" data-inline="true" data-mini="true" name="textinput-hide" placeholder="Item name" value="">
+                </div>
+                <div style="width:15%" class="ui-block-b">
+                    <button id="add" data-inline="true" data-theme="b" class="ui-btn-inline">Add</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
