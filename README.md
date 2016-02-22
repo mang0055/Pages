@@ -1,4 +1,14 @@
-# Pages
+# Pages by Raviraj Mangukiya
+
+TODO: Write a project description
+This all projects are created for assignment purpose. Its coded to learn these languages.
+
+## Installation
+All the projects are too simple to use. You can simply download its html, css and js content and easy to run with your local machine using localhost.
+
+## Usage
+TODO: Write usage instructions
+
 #15F_MAD9013 Cross-Platform Web Development, Fall 2015 Assignments
 
 [06. Responsive Form](http://mang0055.github.io/Pages/9013-RespForm/)<br/>
