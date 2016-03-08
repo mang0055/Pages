@@ -66,10 +66,12 @@ body {
 }
 
 #home {
+    height: auto;
     background: hsl(0, 0%, 76.08%);
 }
 
 #cast {
+    height: auto;
     background: hsl(0, 0%, 76.08%);
 }
 
