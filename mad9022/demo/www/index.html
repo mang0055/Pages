@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <section data-role="page" id="home" class="inactive-page">
+                <header class="header">
+                    <h2>Movie Info</h2>
+                </header>
+                <div>
+                    <h3>Captain America: The Winter Soldier(2014)</h3>
+                    <p class="summary_text">As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and Shield agent, the Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.</p>
+                    <p class="credit_summary_item"><strong>Directors:</strong> Anthony Russo, Joe Russo</p>
+                    <p class="credit_summary_item"><strong>Writers:</strong> Christopher Markus, Stephen McFeely</p>
+                    <p class="credit_summary_item"><strong>Stars:</strong> Chris Evans, Samuel L. Jackson, Scarlett Johansson</p>
+                </div>
+            </section>
+            <section data-role="page" id="cast" class="inactive-page">
+                <header class="header">
+                    <h2>Cast</h2>
+                </header>
+                <div>
+                    <h3>Captain America: The Winter Soldier (2014)</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img id="profile_image" alt="Chris Evans" title="Chris Evans" src="media/img/chris_evans.jpg"></td>
+                                <td>
+                                    <strong>Chris Evans</strong>
+                                    <br />Steve Rogers / Captain America
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img id="profile_image" alt="Samuel L. Jackson" title="Samuel L. Jackson" src="media/img/samuel_jackson.jpg"></td>
+                                <td>
+                                    <strong>Chris Evans</strong>
+                                    <br />Nick Fury
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img id="profile_image" alt="Scarlett Johansson" title="Scarlett Johansson" src="media/img/scarlet.jpg"></td>
+                                <td>
+                                    <strong>Scarlett Johansson</strong>
+                                    <br />SNatasha Romanoff / Black Widow
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section data-role="page" id="review" class="inactive-page">
+                <header class="header">
+                    <h2>Review</h2>
+                </header>
+                <div>
+                    <h3>Captain America: The Winter Soldier</h3>
+                    <table class="table_review">
+                        <tbody>
+                            <tr class="review_row">
+                                <td>
+                                    <h3>A wonderful thriller, conspiracy and adventure that delivers a great great film</h3>
+                                    <div class="rating">
+                                        <span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span>
+                                    </div>
+                                    <h4>Author: Fro from United States</h4>
+                                    <div class="content">This is just short of the level of The Avengers. It uses the strong continuity of the cinematic Marvel(as in, their own studio) universe better than any of the others, and does justice to many different elements, most of them set up prior to this. Events occur in this that will have serious consequences for future entries. The plot-driven nature and approach of a 70's political thriller(where some characters, all credible and with something to do, happen to wear a flag or the like) in a contemporary setting and with biting satire(on foreign policy, something not entirely new to these, but never before this sharp… commenting on mass surveillance and executions taking place before any trial against the (supposed) perpetrator) is spot-on. From a 40's war flick, with heroism and defined lines between good and evil, to the modern method of taking on the opposition – with spying, and questionable tactics(compared to one army versus another).</div>
+                                </td>
+                            </tr>
+                            <tr class="review_row">
+                                <td>
+                                    <h3>A Thrilling Sequel that Raises the Bar for Marvel</h3>
+                                    <div class="rating">
+                                        <span>&#9734</span>
+                                    </div>
+                                    <h4>Author: TyRawrrnosaurus from TurnTheRightCorner.com</h4>
+                                    <div class="content">The biggest fault found in The Winter Soldier is that it does not address the whereabouts of other heroes or where we are in terms of the time line of the other movies. Why can't Captain America call on Tony Stark to help him out or even Hawkeye who is a member of S.H.I.E.L.D. himself. This is a recurring problem we have seen throughout Phase 2 of the MCU in Iron Man 3 and Thor: The Dark World. Marvel Studios needs to acknowledge this hiccup if they want us to continue to believe all of these characters live in the same universe together. You cannot exclude these characters once you have opened Pandora's Box.</div>
+                                </td>
+                            </tr>
+                            <tr class="review_row">
+                                <td>
+                                    <h3>Amazing movie</h3>
+                                    <div class="rating">
+                                        <span>&#9734</span><span>&#9734</span>
+                                    </div>
+                                    <div class="content">This is just short of the level of The Avengers. It uses the strong continuity of the cinematic Marvel(as in, their own studio) universe better than any of the others, and does justice to many different elements, most of them set up prior to this. Events occur in this that will have serious consequences for future entries. The plot-driven nature and approach of a 70's political thriller(where some characters, all credible and with something to do, happen to wear a flag or the like) in a contemporary setting and with biting satire(on foreign policy, something not entirely new to these, but never before this sharp… commenting on mass surveillance and executions taking place before any trial against the (supposed) perpetrator) is spot-on. From a 40's war flick, with heroism and defined lines between good and evil, to the modern method of taking on the opposition – with spying, and questionable tactics(compared to one army versus another).</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <nav id="menu">
+                <a href="#home" class="page-link"><i class="fa fa-home fa-1x navIcon"></i>Home</a>
+                <a href="#cast" class="page-link"><i class="fa fa-user fa-1x navIcon"></i>cast</a>
+                <a href="#review" class="page-link"><i class="fa fa-star-half-o fa-1x navIcon"></i>Review</a>
+            </nav>
+
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
