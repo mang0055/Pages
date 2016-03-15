@@ -66,19 +66,19 @@ body {
 }
 
 #home {
-    background: hsl(0, 0%, 76.08%);
+    background: #5AFDFF;
 }
 
 #cast {
     height: auto;
     min-height: 100%;
-    background: hsl(0, 0%, 76.08%);
+    background: #5AFDFF
 }
 
 #review {
      min-height: 100%;
     height: auto;
-    background: hsla(0, 1%, 55%, 0.4);
+    background: #5AFDFF;
 }
 
 th {
@@ -110,7 +110,7 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 -2px 2px rgba(180,92%,26%, 0.32);
+    box-shadow: 0 -2px 2px #224D54;
 }
 
 nav a {
@@ -124,8 +124,8 @@ nav a {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #222;
-    color: hsl(180, 92%, 26%);
+    background-color: #4D7F7F;
+    color: #fff;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -181,11 +181,11 @@ table {
 }
 
 tbody tr:nth-child(even) {
-    background: hsla(0, 0%, 100%, 0.1);
+    background: #09CACC;
 }
 
 tbody tr:nth-child(odd) {
-    background: hsla(0, 1%, 55%, 0.4);
+    background: #057E7F;
 }
 
 table tr td:nth-child(2) {
