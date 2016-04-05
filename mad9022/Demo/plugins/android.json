@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.iamraviraj.droid.demo"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.iamraviraj.droid.demo"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.iamraviraj.droid.demo"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.iamraviraj.droid.demo"
+        }
+    },
+    "dependent_plugins": {}
+}
