@@ -48,6 +48,6 @@ module.exports.metadata =
     "cordova-plugin-console": "1.0.2",
     "cordova-plugin-device": "1.1.1",
     "cordova-plugin-whitelist": "1.2.1"
-};
+}
 // BOTTOM OF METADATA
 });

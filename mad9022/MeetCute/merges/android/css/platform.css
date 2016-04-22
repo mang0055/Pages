@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif, 'Roboto Condensed';
+}
+
+.header-bar {
+    background-color: #00BCD4;
+    color: black;
+    font-size: 14px;
+    line-height: 2;
+    height: 48px;
+}
+
+[data-role="page"] {
+    background-color: #B2EBF2;
+    font-size: 14px;
+    line-height: 2;
+}
+
+[data-role="page"] h1 {
+    font-size: 20px;
+    line-height: 2;
+}
+
+#nav {
+    background-color: #00BCD4;
+    height: 48dp;
+}
+
+.fab {
+    background-color: #006064;
+}
+
+.btn {
+    background-color: #006064;
+    font-size: 14px;
+}
+
+.modal-step h2 {
+    background-color: #00BCD4;
+}
+
+.modal-step {
+    background-color: #B2EBF2;
+}
