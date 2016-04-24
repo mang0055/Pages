@@ -13,6 +13,10 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
@@ -31,16 +35,18 @@
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
             },
             "framework": {
                 "parents": {
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
                     "libsqlite3.dylib": [
                         {
                             "xml": false,
@@ -77,12 +83,6 @@
                             "count": 1
                         }
                     ],
-                    "CoreGraphics.framework": [
-                        {
-                            "xml": false,
-                            "count": 2
-                        }
-                    ],
                     "CoreImage.framework": [
                         {
                             "xml": false,
@@ -103,6 +103,9 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
         },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
+        },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
         },
@@ -113,9 +116,6 @@
             "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
         },
         "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
-        },
-        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
         }
     },

@@ -13,6 +13,10 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
@@ -26,10 +30,6 @@
                         },
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"android-package\" value=\"com.phonegap.plugins.barcodescanner.BarcodeScanner\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -553,21 +553,21 @@
     },
     "installed_plugins": {
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "ca.edumedia.desa0068.meetcute"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "ca.edumedia.desa0068.meetcute"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "ca.edumedia.desa0068.meetcute"
-        },
-        "cordova-sqlite-storage": {
-            "PACKAGE_NAME": "ca.edumedia.desa0068.meetcute"
-        },
-        "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "ca.edumedia.desa0068.meetcute"
+            "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
         },
         "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
+        },
+        "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "ca.edumedia.mang0055.meetcute"
         }
     },
