@@ -375,7 +375,6 @@ var app = {
                     document.querySelector('#story [data-ref="food"]').textContent = ((Math.round(Math.random())) == 0) ? app.profile.food : food;
 
                     var madlib = document.getElementById("story").innerHTML;
-                    alert(madlib);
                     console.log(madlib);
                     if (app.db == null) {
                         app.db = sqlitePlugin.openDatabase({
