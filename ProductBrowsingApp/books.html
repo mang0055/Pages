@@ -1,0 +1,29 @@
+<button type="button" class="btn btn-default btn-lg btn-block" ui-sref="categories">Back</button>
+<section class="content">
+    <div class="container">
+        <div class="modal-body row">
+            <div class="col-sm-6">
+                <div ng-repeat="book in bookdata">
+                        <div class="card card-block">
+                            <img class="card-img-top" src="{{book.image}}" alt="Card image cap" height="150px" width="150px">
+                            <div>
+                                <a class="card-title" ui-sref="book({catID:book.cat_id,bookID:book._id})" ng-model="book" ng-click="booksdetails(book)" role="button">{{book.title}}</a>
+                            </div>
+                        </div>
+                    
+                </div>
+
+            </div>
+            <div class="col-sm-6 lead text-muted" ng-show="!isEmpty(currentbook)">
+                <h1>Product Description</h1>
+                   <blockquote>
+                    <p><strong>{{currentbook.title}}</strong></p>
+                    <p>Price: {{currentbook.price}}</p>
+                    <p>Rating: {{currentbook.rating}}</p>
+                    <p>Short Description: {{currentbook.short_description}}</p>
+                    <p>Long Description: {{currentbook.long_description}}</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>

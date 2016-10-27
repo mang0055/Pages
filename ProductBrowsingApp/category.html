@@ -1,0 +1,13 @@
+<div class="container">
+                   <div class="card col-md-3" ng-repeat="category in data.categories">
+                    <div class="thumbnail-img">
+                        <div class="overflow-hidden"><img class="img-responsive" src="{{category.image}}" alt="Card image cap"></div>
+                        <a ui-sref="books({catID:category._id})" class="btn-more">{{category.title}}</a>
+                    </div>
+<!--
+                    <div class="card-block">
+                        <h2 class="card-title">{{category.title}}</h2>
+                    </div>
+-->
+                </div>
+    </div>
