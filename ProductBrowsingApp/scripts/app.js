@@ -24,12 +24,12 @@ angular.module('productBrowingAppApp', ['ui.router'])
         })
         .state('books', {
             templateUrl: 'books.html',
-            url: '/categories/:catID/books',
+            url: '/categories/:catID',
             controller: 'BooksCtrl'
         })
-        .state('book', {
-            templateUrl: 'books.html',
-            url: '/categories/:catID/books/:bookID',
-            controller: 'BooksCtrl'
+        .state('books.book', {
+            templateUrl: 'book.html',
+            url: '/:bookID',
+            controller: 'BookCtrl'
         });
 });

@@ -7,13 +7,14 @@
                         <div class="card card-block">
                             <img class="card-img-top" src="{{book.image}}" alt="Card image cap" height="150px" width="150px">
                             <div>
-                                <a class="card-title" ui-sref="book({catID:book.cat_id,bookID:book._id})" ng-model="book" ng-click="booksdetails(book)" role="button">{{book.title}}</a>
+                                <a class="card-title" ui-sref="books.book({bookID:book._id})" ng-model="book" ng-click="booksdetails(book)" role="button">{{book.title}}</a>
                             </div>
                         </div>
                     
                 </div>
 
             </div>
+<!--
             <div class="col-sm-6 lead text-muted" ng-show="!isEmpty(currentbook)">
                 <h1>Product Description</h1>
                    <blockquote>
@@ -24,6 +25,10 @@
                     <p>Long Description: {{currentbook.long_description}}</p>
                 </blockquote>
             </div>
+-->
+      <div class="col-sm-6 lead text-muted" >
+       <ui-view></ui-view>
+       </div>
         </div>
     </div>
 </section>
