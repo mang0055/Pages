@@ -8,32 +8,38 @@ h2 {
     text-transform: uppercase;
     font-size: 50px;
 }
+
 a {
     color: #21c2f8;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 a:hover,
 a:focus {
     color: #21c2f8;
 }
-.card{
-	display:inline-block;	
+
+.card {
+    display: inline-block;
     min-height: 200px;
 }
+
 .content {
-	padding:47px 0 ;
+    padding: 47px 0;
 }
+
 .content-2 {
-	color: #fff;
-	background-color: #222;
+    color: #fff;
+    background-color: #222;
 }
+
 .content-3 {
-	padding: 20px 0 40px;
-	text-align: center;
+    padding: 20px 0 40px;
+    text-align: center;
 }
+
 p {
     font-size: 14px;
     line-height: 1.5;
@@ -50,7 +56,12 @@ a.btn-more {
     text-decoration: none;
 }
 
+.content-category {
+    clear: left;
+}
+
 .thumbnail-img {
+    display: inline-block;
     position: relative;
     padding: 1.2rem;
 }
@@ -64,8 +75,17 @@ a.btn-more {
         width: 33%;
         min-height: 200px;
     }
+    .card .card-block .card-title {
+        font-size: 1.2rem;
+    }
 }
 
-.card .card-block .card-title {
-    font-size: 1.2rem;
+@media(min-width:320px) and (max-width: 991px){
+    .thumbnail-img {
+        width: 50%;
+        height: 50%;
+    display: inline-block;
+    position: relative;
+    padding: 1.2rem;
+}
 }
