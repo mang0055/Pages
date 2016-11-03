@@ -1,0 +1,31 @@
+<form>
+    <p> {{'LANG_SELECTION_TEXT' | translate }} {{'LANGUAGE' | translate }}
+        <button ng-click="changeLanguage('en')">English</button>
+        <button ng-click="changeLanguage('fr')">French</button>
+    </p>
+    <div ng-controller="formController as awesomerahi" class="form-group">
+       
+        <p>
+            <label for="name">{{'NICKNAME' | translate }}* {{name}}</label>
+            <input type="text" ng-model="name" id="name" class="form-control" ng-required="true" />
+        </p>
+        <p>
+            <label for="review">{{'REVIEW' | translate }}* {{review}}</label>
+            <textarea ng-model="review" ng-trim="false" maxlength="1500" class="form-control" rows="5" id="review" ng-required="true" /></textarea> <span>{{255 - review.length}}  {{'TEXT_LEFT' | translate }}</span>
+        </p>
+        <p>
+            <button ng-click="submit()" ng-disabled="isFormValidate">{{'SUBMIT' | translate }}</button><br/><p>{{isFormValidate}}</p>
+        </p>
+        <hr/>
+</form>
+<div id="reviewFrame" ng-show="checked">
+<select id="sortPicker" ng-model="selectSort" ng-change="sort(selectSort)">
+    <option value="">{{'SELECT_ORDER' | translate }}</option>
+    <option value="asc">{{'CREATED' | translate }}(Asc)</option>
+    <option value="desc">{{'CREATED' | translate }}(Dsc)</option>
+</select>
+<div dir-paginate="review in reviews | itemsPerPage: 2 | orderBy: 'date': isReverse">
+    <product-review review="review" />
+</div>
+<dir-pagination-controls max-size="11" direction-links="true" boundary-links="true"></dir-pagination-controls>
+</div>

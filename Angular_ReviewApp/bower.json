@@ -1,0 +1,31 @@
+{
+  "name": "Angular_ReviewApp",
+  "authors": [
+    "Raviraj Mangukiya <ravirajcm@gmail.com>"
+  ],
+  "description": "For assignment",
+  "main": "main",
+  "keywords": [
+    "Angular",
+    "assignment",
+    "for",
+    "TAS"
+  ],
+  "license": "MIT",
+  "homepage": "http://iamraviraj.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-translate": "^2.12.1"
+  },
+  "dependencies": {
+    "angular-local-storage": "^0.5.2",
+    "bootstrap": "^3.3.7"
+  }
+}
