@@ -1,4 +1,4 @@
-<form>
+<form name="reviewForm">
     <p> {{'LANG_SELECTION_TEXT' | translate }} {{'LANGUAGE' | translate }}
         <button ng-click="changeLanguage('en')">English</button>
         <button ng-click="changeLanguage('fr')">French</button>
@@ -14,7 +14,7 @@
             <textarea ng-model="review" ng-trim="false" maxlength="1500" class="form-control" rows="5" id="review" ng-required="true" /></textarea> <span>{{255 - review.length}}  {{'TEXT_LEFT' | translate }}</span>
         </p>
         <p>
-            <button ng-click="submit()" ng-disabled="isFormValidate">{{'SUBMIT' | translate }}</button><br/><p>{{isFormValidate}}</p>
+            <button ng-click="submit()" ng-disabled="reviewForm.$invalid">{{'SUBMIT' | translate }}</button><br/>
         </p>
         <hr/>
 </form>
