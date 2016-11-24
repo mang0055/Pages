@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Firebase Quick Demo for Assignment</title>
+ </head>
+ 
+<body>
+<h1 id="title"></h1>      
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCIajWSrc8WTJENnRzsSH-Id3VbSjWIdak",
+    authDomain: "torrid-inferno-4136.firebaseapp.com",
+    databaseURL: "https://torrid-inferno-4136.firebaseio.com",
+    storageBucket: "torrid-inferno-4136.appspot.com",
+    messagingSenderId: "679638451541"
+  };
+  firebase.initializeApp(config);
+    
+    var title=document.getElementById('title');
+    var dbRef=firebase.database().ref().child('text');
+    dbRef.on('value',snap=>title.innerText=snap.val());
+</script>
+  </body>
+</html>
