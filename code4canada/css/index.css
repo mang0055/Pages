@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/****************************
+    Default
+****************************/
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    margin: 3rem;
+    font-size: 62.5%;
+    color: #444;
+}
+.btn{
+    display:inline-block;
+    border:1px solid #333;
+    border-radius: 8px;
+    width: 120px;
+    line-height: 2.0rem;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align:center;
+    cursor: pointer;
+}
+
+.enabled {
+    cursor: pointer;
+    background:#F96;
+}
+
+.disabled {
+    background: #CCCCCC;
+    cursor: default;
+}
+
+#output1 {
+    margin: 3rem;
+    font-size: 1.0rem;
+    text-align:left;
+}
+
+#output2 {
+    margin: 3rem;
+    font-size: 1.0rem;
+    text-align:left;
+}
