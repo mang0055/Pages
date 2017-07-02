@@ -74,7 +74,9 @@ function showRecentViolation() {
         var cat_name = list_violation_by_category[i].cat_name;
         var dates = [];
         for (var j = 0; j < list_violation_by_category[i].data.length; j++) {
-            dates.push(new Date(list_violation_by_category[i].data[j].violation_date));
+            if (list_violation_by_category[i].data[j].violation_date != null) {
+                dates.push(Date.parseExact(list_violation_by_category[i].data[j].violation_date, "yyyy-MM-dd H:mm"));
+            }
         }
         var sorted = dates.sort(sortDates);
         var minDate = sorted[0];
